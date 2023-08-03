@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruds</title>
+    <link rel="icon" href="./img/th.jpg">
+    <!-- <link rel="icon" href="./img/img.png"> -->
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <main>
+      <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+          <h1 class="text-center">Smart Login System</h1>
+
+        <input id="username" oninput="validateName()" type="text" placeholder="Enter Your Name" class="w-100 form-control my-3">
+        <p id="errorName" class="text-center text-white">Write a valid Username e.g: kholoud Taher</p>
+
+        <input id="useremail" oninput="validateEmail()" type="email" placeholder="Enter Your Email" class="w-100 form-control my-3">
+        <p id="errorEmail" class="text-center text-white">Write a valid email e.g: kholoud@gmail.com</p>
+
+        <input id="userpassword" oninput="validatePassword()" type="password" placeholder="Enter Your Password" class="w-100 form-control my-3">
+        <p id="errorPassword" class="text-white text-center">Write a valid Password, at least 4 letters and 4 numbers</p>
+
+        <button onclick="createUser()" class="btn btn-outline-primary w-100 my-3">Sign Up</button>
+        <p class="error"></p>
+
+      
+          <p class="text-center text-white">You have an account? 
+            <a href="index.html">Sign In</a> 
+          </p>
+        
+        </div>
+      </div>
+    </main>
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
