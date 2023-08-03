@@ -2,6 +2,9 @@
 var inEmail=document.getElementById("inEmail"); // Checks if user exists
 var inPassword=document.getElementById("inPass");
 
+var upName = document.getElementById("username");
+var upEmail = document.getElementById("useremail");
+var upPassword = document.getElementById("userpassword");
 
 var userContainer=[];
 
@@ -20,13 +23,13 @@ function login()
         }
         if(validationEmail() && validationPassword())
         {
-            if(userContainer.email[i] == userEmailInput.value
+            if(userContainer.email[i] == inEmail.value
                 &&
-                userContainer.password[i] == userPasswordInput.value)
+                userContainer.password[i] == inPassword.value)
                 {
                 
                 localStorage.setItem("sessionUsername",JSON.stringify(userContainer.name[i]));
-                window.location="../home.html";
+                window.location="home.html";
                 
             }
             else{
